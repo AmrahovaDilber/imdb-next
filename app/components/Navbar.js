@@ -1,7 +1,12 @@
-import React from "react";
+import NavbarItem from '../components/NavbarItem';
 
 function Navbar() {
-  return <h>Navbar</h>;
+  return(
+    <div class='flex justify-center gap-4 bg-amber-500 p-4 lg:text-lgr'>
+      <NavbarItem title='Trending' param="fetch" />
+      <NavbarItem title='Top Rated' param="fetchTopRated" />
+    </div>
+  );
 }
 
 export default Navbar;
